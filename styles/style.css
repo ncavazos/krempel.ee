@@ -66,6 +66,11 @@ img {
   width: 150px;
   align-content: center;
   padding: 10px;
+  padding-left: 35px;
+}
+
+.menu-text1 {
+  display: flex;
 }
 
 .menu-2 {
@@ -76,4 +81,9 @@ img {
   width: 150px;
   align-content: center;
   padding: 10px;
+  padding-left: 35px;
+}
+
+.menu-text2 {
+  display: flex;
 }
