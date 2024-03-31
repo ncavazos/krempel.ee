@@ -1,6 +1,7 @@
 html {
   background-color: #FFFFFF;
   font-family: "Silkscreen";
+  padding: 0px;
 }
 
 p {
@@ -46,8 +47,8 @@ img {
   margin: 0px;
 }
 
-.me3 {
-  width: 150px;
+.krempel {
+  width: 450px;
 }
 
 .project {
