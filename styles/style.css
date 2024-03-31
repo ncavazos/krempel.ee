@@ -1,0 +1,66 @@
+html {
+  background-color: #FFFFFF;
+  font-family: "Silkscreen";
+}
+
+p {
+  margin: auto;
+}
+
+img {
+
+}
+
+.topnav {
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.topnav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #f1f1f1;
+  justify-content:
+}
+
+.topnav a:hover {
+  color: #000000;
+}
+
+.logo {
+  background-color: #f1f1f1;
+  color: #000000;
+  font-size: 30px;
+  height: 100px;
+
+}
+
+.bar {
+  background-color: #000000;
+  position: relative;
+  height: 100px;
+  margin: 0px;
+}
+
+.me3 {
+  width: 150px;
+}
+
+.project {
+  padding: 30px;
+  width: 60%;
+  position: relative;
+  bottom: 30px;
+}
+
+.menu-1 {
+  display: flex;
+}
+
+.menu-1 img {
+  width: 150px;
+}
