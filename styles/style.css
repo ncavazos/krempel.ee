@@ -22,10 +22,12 @@ img {
   padding-bottom: 10px;
   display: flex;
   width: 280px;
+  height: 40px;
+  position: relative;
 }
 
 .topnav a {
-  padding: 25px 8px 6px 16px;
+  padding: 17px 8px 6px 16px;
   text-decoration: none;
   font-size: 15px;
   color: #f1f1f1;
@@ -43,25 +45,32 @@ img {
 }
 
 .fb {
-  position: relative;
+  position: absolute;
   left: 280px;
   bottom:25px;
   width:50px;
   height:50px;
+
 }
 .logo {
   background-color: #f1f1f1;
   color: #000000;
   font-size: 30px;
-  height: 100px;
   padding-left: 20px;
+  padding-bottom:25px;
   font-family: "Sarina", sans-serif;
+  position: relative;
+  display: flex;
 }
 
 .logo p {
   padding-top: 30px;
 }
 
+.phone {
+  font-family: "Anek Telugu", sans-serif;
+  font-size: 16px;
+}
 .bar {
   background-color: #000000;
   position: relative;
