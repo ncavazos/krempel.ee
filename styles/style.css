@@ -11,7 +11,7 @@ p {
 img {
 
 }
-
+@media screen and (max-width: 600px) {
 .topnav {
   background-color: #000000;
   overflow-x: hidden;
@@ -86,4 +86,6 @@ img {
 
 .menu-text2 {
   display: flex;
+}
+
 }
