@@ -44,12 +44,17 @@ img {
   font-size: 30px;
   height: 100px;
   padding-left: 20px;
+
+}
+
+.logo p {
+  padding-top: 30px;
 }
 
 .bar {
   background-color: #000000;
   position: relative;
-  height: 100px;
+  height: 30px;
   margin: 0px;
 }
 
