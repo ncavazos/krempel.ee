@@ -88,6 +88,117 @@ img {
   padding: 30px;
   width: 60%;
   bottom: 30px;
+  font-weight: bold;
+}
+
+/* Menu */
+.menu-1 {
+  display: flex;
+}
+
+.menu-1 img {
+  width: 150px;
+  align-content: center;
+  padding: 10px;
+  padding-left: 35px;
+}
+
+.menu-text1 {
+  display: flex;
+}
+
+.menu-2 {
+  display: flex;
+}
+
+.menu-2 img {
+  width: 150px;
+  align-content: center;
+  padding: 10px;
+  padding-left: 35px;
+}
+
+.menu-text2 {
+  display: flex;
+}
+
+}
+
+@media screen and (min-width: 601px) {
+.topnav {
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  width: 600px;
+  height: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.topnav a {
+  padding: 17px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #f1f1f1;
+  justify-content:
+}
+
+.topnav a:hover {
+  color: #000000;
+}
+
+.topnav img {
+  width: 50px;
+  height: 50px;
+  padding-top: 8px;
+}
+
+.fb {
+  position: absolute;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  left: 595px;
+  top: 20px;
+}
+.logo {
+  background-color: #f1f1f1;
+  color: #000000;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-bottom:25px;
+  font-family: "Sarina", sans-serif;
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+
+.logo p {
+  padding-top: 30px;
+}
+
+.phone {
+  font-family: "Anek Telugu", sans-serif;
+  font-size: 16px;
+}
+.bar {
+  background-color: #000000;
+  position: relative;
+  height: 30px;
+  margin: 0px;
+}
+
+.krempel {
+  width: 100%;
+}
+
+.menu {
+  padding: 30px;
+  width: 60%;
+  bottom: 30px;
+  font-weight: bold;
 }
 
 /* Menu */
