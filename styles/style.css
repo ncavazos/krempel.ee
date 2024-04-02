@@ -15,6 +15,15 @@ img {
 
 }
 @media screen and (max-width: 600px) {
+
+.hours {
+  display: flex;
+  padding-top:40px;
+}
+
+.hours p {
+  padding-left: 20px;
+}
 .topnav {
   background-color: #000000;
   overflow-x: hidden;
@@ -77,6 +86,11 @@ img {
   position: relative;
   height: 30px;
   margin: 0px;
+}
+
+.bottomimg {
+  width: 300px;
+  padding-left: 100px;
 }
 
 .krempel {
