@@ -88,13 +88,12 @@ p {
   /* Menu */
   .menu-1 {
     display: flex;
+    justify-content: center;
   }
 
   .menu-1 img {
     width: 150px;
-    align-content: center;
-    padding: 10px;
-    padding-left: 35px;
+    margin: auto;
   }
 
   .menu-text1 {
@@ -105,13 +104,12 @@ p {
 
   .menu-2 {
     display: flex;
+    justify-content: center;
   }
 
   .menu-2 img {
     width: 150px;
-    align-content: center;
-    padding: 10px;
-    padding-left: 35px;
+    margin: auto;
   }
 
   .menu-text2 {
