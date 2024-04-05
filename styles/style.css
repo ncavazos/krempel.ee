@@ -124,7 +124,13 @@ p {
 }
 
 .hours p {
-  padding-left: 20px;
+  padding-left: 40px;
+}
+
+
+.hoursimg {
+  width: 290px;
+  padding-left: 60px;
 }
 
 .location {
@@ -141,11 +147,6 @@ p {
   position: relative;
   height: 30px;
   margin: 0px;
-}
-
-.hoursimg {
-  width: 290px;
-  padding-left: 100px;
 }
 
 .reviews-box {
