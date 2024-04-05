@@ -74,7 +74,7 @@ p {
   }
 
   .krempel {
-    width: 460px;
+    width: 450px;
   }
 
 
@@ -89,13 +89,41 @@ p {
   .menu-1 {
     display: flex;
     justify-content: center;
+    z-index: 2;
+    margin: auto;
   }
+
+
 
   .menu-1 img {
     width: 150px;
     margin: auto;
+    z-index: 2;
   }
 
+  .menu-box-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 105px;
+    left: 8px;
+    z-index: 1;
+    margin: auto;
+  }
+
+  .menu-box1 {
+    width: 150px;
+    height: 100px;
+    background-color: #000000;
+    margin: auto;
+  }
+
+  .menu-box2 {
+    width: 150px;
+    height: 100px;
+    background-color: #000000;
+    margin: auto;
+  }
   .menu-text1 {
     display: flex;
     justify-content: center;
@@ -105,10 +133,35 @@ p {
   .menu-2 {
     display: flex;
     justify-content: center;
+    z-index:1;
   }
 
   .menu-2 img {
     width: 150px;
+    margin: auto;
+    z-index:1;
+  }
+
+  .menu-box-container2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 105px;
+    left: 8px;
+    z-index: 0;
+  }
+
+  .menu-box3 {
+    width: 150px;
+    height: 100px;
+    background-color: #000000;
+    margin: auto;
+  }
+
+  .menu-box4 {
+    width: 150px;
+    height: 100px;
+    background-color: #000000;
     margin: auto;
   }
 
