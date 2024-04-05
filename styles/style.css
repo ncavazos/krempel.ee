@@ -11,9 +11,6 @@ p {
   margin: auto;
 }
 
-img {
-
-}
 @media screen and (max-width: 600px) {
 
   .topnav {
@@ -147,8 +144,8 @@ img {
   margin: 0px;
 }
 
-.bottomimg {
-  width: 300px;
+.hoursimg {
+  width: 290px;
   padding-left: 100px;
 }
 
@@ -246,8 +243,7 @@ img {
 .menu-1 img {
   width: 150px;
   align-content: center;
-  padding: 10px;
-  padding-left: 350px;
+  justify-content: center;
 }
 
 .menu-text1 {
@@ -262,8 +258,7 @@ img {
 .menu-2 img {
   width: 150px;
   align-content: center;
-  padding: 10px;
-  padding-left: 350px;
+  justify-conter: center;
 }
 
 .menu-text2 {
