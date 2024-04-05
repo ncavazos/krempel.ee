@@ -147,6 +147,18 @@ p {
   padding-left: 100px;
 }
 
+.reviews-box {
+  width: 100px;
+  height: 100px;
+  background-color: #f1f1f1;
+  position: absolute;
+  z-index: 5;
+  left: 25px;
+  padding: 10px;
+  margin: 10px;
+  top: 1100px;
+}
+
 .reviews {
   padding-top: 10px;
 }
