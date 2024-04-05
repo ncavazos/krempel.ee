@@ -24,6 +24,11 @@ img {
 .hours p {
   padding-left: 20px;
 }
+
+.location {
+  display: flex;
+  padding-top: 10px;
+}
 .topnav {
   background-color: #000000;
   overflow-x: hidden;
@@ -34,6 +39,10 @@ img {
   height: 40px;
   position: relative;
   z-index: 1;
+}
+
+.mapimg {
+  width: 300px;
 }
 
 .topnav a {
@@ -99,9 +108,9 @@ img {
 
 .menu {
   padding: 30px;
+  padding-bottom: 10px;
   width: 60%;
-  bottom: 30px;
-  font-weight: bold;
+  font-size: 26px;
 }
 
 /* Menu */
