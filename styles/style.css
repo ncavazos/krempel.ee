@@ -22,7 +22,7 @@ img {
     padding-left: 40px;
     padding-bottom: 10px;
     display: flex;
-    width: 320px;
+    width: 340px;
     height: 40px;
     position: relative;
     z-index: 1;
@@ -152,6 +152,9 @@ img {
   padding-left: 100px;
 }
 
+.reviews {
+  padding-top: 10px;
+}
 .reviews img {
   width: 300px;
 }
