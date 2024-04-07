@@ -190,8 +190,19 @@ p {
   display: flex;
   padding-top: 10px;
 }
+
+.mapbox {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .mapimg {
   width: 300px;
+}
+
+.map {
+  width: 100px;
+  height: 100px;
 }
 
 
