@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Café</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- GLOBAL ---------- */
+    body {
+      font-family: "Inter", sans-serif;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ---------- FILTER BUTTONS ---------- */
+    .menu-filters {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .menu-filters button {
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 999px;
+      background: #eee;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .menu-filters button.active {
+      background: #222;
+      color: white;
+    }
+
+    .menu-filters button:active {
+      transform: scale(0.95);
+    }
+
+    /* ---------- MENU LIST ---------- */
+    .menu-items {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .menu-item {
+      padding: 1.5rem;
+      border-bottom: 1px solid #e7e7e7;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: 0.4s ease;
+      display: block;
+    }
+
+    .menu-item.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h3 {
+      margin: 0 0 0.3rem 0;
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+      font-size: 1.35rem;
+    }
+
+    .price {
+      float: right;
+      font-weight: 600;
+      font-size: 1.1rem;
+      animation: pop 0.3s ease;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    p {
+      margin: 0;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .menu-item:hover {
+      background: #fafafa;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Our Menu</h1>
+
+  <!-- ---------- FILTER BUTTONS ---------- -->
+  <section class="menu-filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="breakfast">Breakfast</button>
+    <button data-filter="lunch">Lunch</button>
+    <button data-filter="dinner">Dinner</button>
+  </section>
+
+  <!-- ---------- MENU ITEMS ---------- -->
+  <section class="menu-items">
+
+    <div class="menu-item breakfast show">
+      <h3>Pancakes <span class="price">€5.50</span></h3>
+      <p>Fluffy pancakes with maple syrup.</p>
+    </div>
+
+    <div class="menu-item breakfast show">
+      <h3>Omelette <span class="price">€6.20</span></h3>
+      <p>Three-egg omelette with cheese and herbs.</p>
+    </div>
+
+    <div class="menu-item lunch show">
+      <h3>Chicken Wrap <span class="price">€7.90</span></h3>
+      <p>Tender grilled chicken with fresh veggies.</p>
+    </div>
+
+    <div class="menu-item lunch show">
+      <h3>Caesar Salad <span class="price">€8.50</span></h3>
+      <p>Crisp romaine, parmesan, crunchy croutons.</p>
+    </div>
+
+    <div class="menu-item dinner show">
+      <h3>Grilled Salmon <span class="price">€12.90</span></h3>
+      <p>Served with lemon butter and roasted potatoes.</p>
+    </div>
+
+    <div class="menu-item dinner show">
+      <h3>Pasta Alfredo <span class="price">€10.50</span></h3>
+      <p>Creamy sauce with garlic and parmesan.</p>
+    </div>
+
+  </section>
+
+  <!-- ---------- SCRIPT ---------- -->
+  <script>
+    const filterButtons = document.querySelectorAll("[data-filter]");
+    const items = document.querySelectorAll(".menu-item");
+
+    // Initial animation when page loads
+    window.onload = () => {
+      items.forEach(item => item.classList.add("show"));
+    };
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+
+        // Update button states
+        document.querySelector(".menu-filters .active")?.classList.remove("active");
+        btn.classList.add("active");
+
+        const filter = btn.dataset.filter;
+
+        items.forEach(item => {
+          // Show matching items
+          if (filter === "all" || item.classList.contains(filter)) {
+            item.style.display = "block";
+
+            // Delay show class for smooth animation
+            setTimeout(() => item.classList.add("show"), 10);
+
+            // Trigger price animation
+            const price = item.querySelector(".price");
+            price.classList.remove("pop");
+            void price.offsetWidth; 
+            price.classList.add("pop");
+
+          } else {
+            // Hide non-matching items
+            item.classList.remove("show");
+            setTimeout(() => {
+              item.style.display = "none";
+            }, 300);
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
