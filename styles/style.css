@@ -180,7 +180,9 @@ p {
   padding-left: 40px;
 }
 
-
+.hourstxt {
+  font-size: 26px;
+}
 .hoursimg {
   width: 280px;
   padding-left: 60px;
@@ -226,7 +228,7 @@ p {
   left: 25px;
   padding: 10px;
   margin: 10px;
-  top: 1100px;
+  top: 1350px;
 }
 
 .reviews {
