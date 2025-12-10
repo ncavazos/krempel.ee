@@ -96,7 +96,7 @@ p {
 
 
   .menu-1 img {
-    width: 150px;
+    width: 200px;
     margin: auto;
     z-index: 2;
   }
@@ -119,7 +119,7 @@ p {
   }
 
   .menu-box2 {
-    width: 150px;
+    width: 200px;
     height: 100px;
     background-color: #000000;
     margin: auto;
