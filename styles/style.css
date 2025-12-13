@@ -92,17 +92,20 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 35px;
-    background-color: C4C4C4;
+    padding-top: 15px;
+    background-color: #f1f1f1;
+    height: 200px;
+    border: thin;
   }
 
   .intro-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #C4C4C4;
+    background-color: #f1f1f1;
     padding: 15px;
-    font-size: 12px;
+    font-size: 14px;
+    height: 170px;
     margin:10px;
   }
   .menu {
@@ -200,7 +203,7 @@ img {
 .hours {
   display: flex;
   justify-content: center;
-  padding-top:40px;
+  padding-top:20px;
   width: 100%;
 }
 
