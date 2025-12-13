@@ -5,12 +5,23 @@ html {
 }
 
 body{
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 p {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
 @media screen and (max-width: 600px) {
 
   .topnav {
@@ -19,7 +30,7 @@ p {
     padding-left: 40px;
     padding-bottom: 10px;
     display: flex;
-    width: 340px;
+    width: 100%;
     height: 40px;
     position: relative;
     z-index: 1;
@@ -74,7 +85,7 @@ p {
   }
 
   .krempel {
-    width: 440px;
+    width: 100%;
   }
 
 
@@ -185,7 +196,7 @@ p {
 }
 .hoursimg {
   width: 280px;
-  padding-left: 60px;
+  padding-left: 0px;
 }
 
 .location {
@@ -233,9 +244,52 @@ p {
 
 .reviews {
   padding-top: 10px;
+  width: 100%;
 }
 .reviews img {
-  width: 430px;
+  width: 100%;
+}
+#designToggle {
+  position: fixed;
+  bottom: 20px;        /* 20px from bottom */
+  right: 20px;         /* 20px from right */
+  width: 40px;         /* circle size */
+  height: 40px;
+  background-color: #f0c040; /* gold accent */
+  border-radius: 50%;  /* makes it a circle */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 1000;       /* make sure it’s on top of other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+#designToggle:hover {
+  transform: scale(1.2);
+}
+/* Alternative design styles */
+body.alt-design {
+  background-color: #5E5E5E; /* light gray background */
+  font-family: 'Sarina', cursive; /* switch font */
+}
+
+body.alt-design .topnav {
+  background-color: #222; /* slightly lighter navbar */
+}
+
+body.alt-design .menu p {
+  color: #333; /* change text color */
+}
+
+/* You can also swap images */
+body.alt-design .krempel {
+  content: url('images/krempel-alt.jpg');
 }
 
 }
@@ -347,5 +401,46 @@ p {
   display: flex;
   padding-left: 250px;
 }
+#designToggle {
+  position: fixed;
+  bottom: 20px;        /* 20px from bottom */
+  right: 20px;         /* 20px from right */
+  width: 40px;         /* circle size */
+  height: 40px;
+  background-color: #f0c040; /* gold accent */
+  border-radius: 50%;  /* makes it a circle */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 1000;       /* make sure it’s on top of other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  user-select: none;
+  transition: transform 0.2s;
+}
 
+#designToggle:hover {
+  transform: scale(1.2);
+}
+/* Alternative design styles */
+body.alt-design {
+  background-color: #5E5E5E; /* light gray background */
+  font-family: 'Sarina', cursive; /* switch font */
+}
+
+body.alt-design .topnav {
+  background-color: #222; /* slightly lighter navbar */
+}
+
+body.alt-design .menu p {
+  color: #333; /* change text color */
+}
+
+/* You can also swap images */
+body.alt-design .krempel {
+  content: url('images/krempel-alt.jpg');
+}
 }

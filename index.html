@@ -38,9 +38,11 @@
 
     <img class="krempel" src="images/krempel.jpg">
 
+
     <div class="menu">
       <p>Menu</p>
     </div>
+
 
     <div class="menu-1" >
       <img src="images/pancakes-new.png"/>
@@ -105,5 +107,13 @@
       <img src="images/reviews.png">
     </div>
 
+    <script>
+    const toggle = document.getElementById('designToggle');
+
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('alt-design'); });
+    </script>
+
+    <div id="designToggle" title="Switch Design"></div>
   </body>
 </html>
